@@ -19,3 +19,9 @@ def solve(formula):
     for f in fill_in(formula):
         if valid(f):
             return f
+
+# Inspecting running details of the codes:
+import cProfile
+
+cProfile.run(solve(formula))
+
